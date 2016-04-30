@@ -12,7 +12,7 @@ def article(request,repo,file_name):
     mimetypes.init()
     try:
         #find article, if article exist return file, other wise call spider
-        file_path = settings.MEDIA_ROOT + '/' + repo +'/'+file_name 
+        file_path = settings.MEDIA_ROOT + '/articles/' + repo +'/'+file_name 
         fsock = open(file_path,"rb")
         file_size = os.path.getsize(file_path)
         print "file size is: " + str(file_size)

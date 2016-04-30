@@ -4,7 +4,7 @@ from django.conf import settings
 from django.views.static import serve
 
 urlpatterns = [
-    url(r'^article/', include('gitireadme.article.urls')),
+    url(r'^articles/', include('gitireadme.article.urls')),
 ]
 
 if settings.DEBUG:
