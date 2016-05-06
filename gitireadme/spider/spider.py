@@ -5,7 +5,6 @@ Created on 2 Mar 2016
 
 @author: aaron
 '''
-from ubuntu_sso.keyring.pykeyring import USERNAME
 from yaml import safe_dump, load
 import sys, os,requests, uuid, hashlib, shutil 
 import json, codecs, io
